@@ -1,22 +1,26 @@
+<!DOCTYPE html>
 <html>
+<head>
+  <title>Git Basics</title>
+</head>
 <body>
-<center>
-  git basic
-</center>
-<hr>
+  <center>
+    <h1>Git Basics</h1>
+  </center>
+  <hr>
 
-<form>
-  <label>NAME</label><pre></pre>
-  <input name ="id" id="name" placeholder="enter your name" type="text" required/><pre></pre>
-  <label>Email</label><pre></pre>
-  <input id="email" type="email" required/><pre></pre>
-  <button onclick="handleclick" type="submit">submit</button> 
-</form>
+  <form>
+    <label for="name">NAME</label><br>
+    <input name="id" id="name" placeholder="enter your name" type="text" required><br><br>
+    <label for="email">Email</label><br>
+    <input id="email" type="email" required><br><br>
+    <button type="submit" onclick="handleClick()">Submit</button> 
+  </form>
 
-<script>
-  const handleclick =()=>{
-    alert("thanks for response")
-  }
-</script>
+  <script>
+    function handleClick() {
+      alert("Thanks for your response!");
+    }
+  </script>
 </body>
 </html>
